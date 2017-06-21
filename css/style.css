@@ -1,0 +1,288 @@
+* {
+	box-sizing: border-box;
+  font-family: 'Courier', sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #222222;
+}
+
+#pie-container {
+  width: 600px;
+  height: 600px;
+/*   border: 1px solid white; */
+  background-color: #222222;
+  position: absolute;
+  top: calc(50% - 300px);
+  left: calc(50% - 300px);
+  
+}
+
+#left-semi, #right-semi {
+  width: 172px;
+  height: 344px;
+  background-color: #222222;
+  position: absolute;
+}
+
+#left-semi {
+  top: 5px;
+  left: 4px;
+  border-radius: 380px 0 0 380px;
+  transform-origin: right center;
+  z-index: 3;
+}
+
+#right-semi {
+  top: 5px;
+  left: 176px;
+  border-radius: 0 380px 380px 0;
+  transform-origin: left center;
+  z-index: 4;
+}
+
+#break:hover #pie-top {
+  transform: scale(1.1);
+}
+
+#time-disp {
+  font-size: 96px;
+  color: white;
+  position: absolute;
+  top: 122px;
+  left: 32px;
+  z-index: 6;
+}
+
+#session {
+  font-size: 48px;
+  position: absolute;
+  top: 240px;
+  left: 75px;
+  z-index: 9;
+}
+
+#break {
+  font-size: 48px;
+  position: absolute;  
+  top: 50px;
+  left: 100px;
+  z-index: 9;
+  opacity: 0.3
+}
+
+#pie {
+  width: 360px;
+  height: 360px;
+  border: 1px solid green;
+  background-color: green;
+  border-radius: 180px;
+  position: absolute;
+  top: 120px;
+  left: 120px;
+}
+
+#pie-top {
+  width: 360px;
+  height: 360px;
+  border: 4px solid yellow;
+  border-radius: 180px;
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  z-index: 10;
+}
+
+#pie-top:hover {
+  transform: scale(1.05);
+}
+
+#pie-top-inner {
+  width: 352px;
+  height: 352px;
+  border: 5px solid #222222;
+  border-radius: 176px;
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  z-index: 10;
+}
+
+#min-hand {
+  width: 4px;
+  height: 175px;
+  position: absolute;
+  background-color: white;
+  top: 1px;
+  left: 175px;
+  transform-origin: left bottom;
+  z-index: 5;
+}
+
+#minus-box, #plus-box {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
+
+#minus-box {
+  top: 490px;
+  left: 265px;
+}
+
+#plus-box {
+  top: 30px;
+  left: 265px;
+}
+
+
+#minus {
+  width: 60px;
+  height: 20px;
+  background-color: green;
+  position: absolute;
+  top: 15px;
+  left: 4px;
+}
+
+#minus-outline {
+  width: 69px;
+  height: 29px;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+
+#plus-box:hover, #minus-box:hover, #play-box:hover, #reset-box:hover  {
+  transform: scale(1.1);
+}
+
+#plus-horiz {
+  width: 61px;
+  height: 20px;
+  background-color: green;
+  position: absolute;
+  top: 25px;
+  left: 4px;
+  z-index: 7;
+}
+
+#plus-horiz-outline {
+  width: 68px;
+  height: 28px;
+  background-color: white;
+  position: absolute;
+  top: 20.5px;
+  left: 0.5px;
+}
+
+#plus-vert {
+  width: 21px;
+  height: 60px;
+  background-color: green;
+  position: absolute;
+  top: 4px;
+  left: 24px;
+  z-index: 7;
+}
+
+#plus-vert-outline {
+  width: 28px;
+  height: 68px;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 20.5px;
+}
+
+#play-box {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 265px;
+  left: 25px;
+}
+
+#play, #play-outline {
+	width: 0;
+	height: 0;
+	border-top: 30px solid transparent;
+	border-left: 50px solid green;
+	border-bottom: 30px solid transparent;
+  position: absolute;
+  top: 8px;
+  left: 20px;
+}
+
+#play-outline {
+  border-left: 50px solid white;
+  transform: scale(1.3);
+  left: 22.5px;
+}
+
+#reset-box {
+  width: 80px;
+  height: 90px;
+  position: absolute;
+  top: 260px;
+  left: 500px;
+}
+
+#vert-bar {
+  width: 8px;
+  height: 60px;
+  background-color: green;
+  position: absolute;
+  top: 12px;
+  left: 4px;
+}
+
+#vert-bar-outline {
+  width: 15px;
+  height: 68px;
+  background-color: white;
+  position: absolute;
+  top: 8px;
+  left: 0px;
+}
+
+.tri-left {
+	width: 0;
+	height: 0;
+	border-top: 28px solid transparent;
+	border-right: 30px solid green;
+	border-bottom: 28px solid transparent;
+  position: absolute;
+}
+
+.tri-left-outline {
+	width: 0;
+	height: 0;
+	border-top: 38px solid transparent;
+	border-right: 42px solid white;
+	border-bottom: 38px solid transparent;
+  position: absolute;
+}
+
+#t1 {
+  top: 16px;
+  left: 15px;
+}
+
+#t1-outline {
+  top: 6px;
+  left: 8px;
+}
+
+#t2 {
+  top: 16px;
+  left: 43px;
+}
+
+#t2-outline {
+  top: 6px;
+  left: 35px;
+}
+
