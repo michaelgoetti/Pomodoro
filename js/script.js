@@ -18,6 +18,8 @@ const fmtTime = function(a) {
   }
 }
 
+$("#time-disp").text(fmtTime(sessDuration) + ":00");
+
 const sessBreakReset = function() {
   sessBreak = 'session';
   $("#break").css({ opacity: '0.3' });
@@ -38,8 +40,6 @@ const sessBreakFlip = function() {
   $(".flip-color3").css({ 'border-right': '30px solid #448dee' });
   $("#right-semi").css({ 'background-color': '#222222' });
 }
-
-$("#time-disp").text(fmtTime(sessDuration) + ":00");
 
 $("#pie-top").click(function() {
   if (sessBreak === 'session' && timerRunning === false) {
